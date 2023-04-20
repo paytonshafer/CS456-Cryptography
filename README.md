@@ -1,7 +1,7 @@
 # CS456-Cryptography
-This repository contains all of my assignments from CS456: Cryptography at Clarkson Univeristy. Assignment 1 through 3 required you to break a given file
-using the information that was given and then usually something extra. All of my solutions are done in python. The Chat-Protocal is an exrypted chat 
-protocal that allows two parties to conduct secure communication, this was also done in python.
+This repository contains all of my assignments from CS456: Cryptography at Clarkson Univeristy in spring 2023. Assignment 1 through 3 required you to 
+break a given file using the information that was given and then usually something extra. All of my solutions are done in python. The Chat-Protocal is an 
+exrypted chat protocal that allows two parties to conduct secure communication, this was also done in python.
 
 ## a1
 This assignment's topic was RSA. The first thing I had to do was break the file cipher.txt in hacka1. I did this by encoding every ascii character with
