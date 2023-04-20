@@ -1,0 +1,4 @@
+To run this simply start the server side first and choose the bit length for you primes.
+Then start the client and input you AES secret key.
+Then chat!
+When you are finished simply type 'exit()' to exit the program
