@@ -76,3 +76,10 @@ python3 client.py
 One the client starts you will be prompted to enter your AES secret which has to be 16 characters. Once that is selected the client uses the server's
 public keys to encrypt the AES key and send it to the server to decrypt. Once both the server and client have the AES key, the channel is secure and you
 are free to chat back and forth since every message is encrypted with AES before it is sent.
+
+## SHA-3
+This was for the final project for this class. We were assigned to do a research project on an area in cyrptography and I chose to do SHA-3. We were assigned a 5-10 page paper on it and a 5-10 minute presentaion. First look at sha3.py, this is my implementation of SHA-3 in python. To run the program cd into the SHA-3 directory and run:
+```sh
+python3 sha3.py
+```
+After this you will be prompted to chose the version of sha-3 which conists of 224, 256, 384, 512 and these dertimine the bit length of the output digest. Once you have chosen a version you will be prompted to enter the data you would like hashed. After that the data is hashed and the hex digest is printed out.
