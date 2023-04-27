@@ -53,7 +53,7 @@ def padding(A, r):
     if remainder == 0:
         return A
     else:
-        out = A + d + ''.join(str(x) for x in (np.zeros(r - remainder - 8 ,dtype= int)))
+        out = A + d + ''.join(str(x) for x in (np.zeros(r - remainder - 9 ,dtype= int))) + '1'
         return out[:new_len]
 
 # 1600 bits(1 dimensional array) to 3 dimensional array of 5x5x64
