@@ -8,7 +8,7 @@ Examining SHA-3 was for the final project for this class. We were assigned to do
 ```sh
 python3 sha3.py
 ```
-After this you will be prompted to chose the version of sha-3 which conists of 224, 256, 384, 512 and these dertimine the bit length of the output digest. Once you have chosen a version you will be prompted to enter the data you would like hashed. After that the data is hashed and the hex digest is printed out. Next there is a file named sha3libraries.py, this file contains the 4 main sha3 functions, sha3 on a file (showing how after 'corrupting' a file you get a differnt hash), SHAKE (an extendable output function that allows you to choose the number of bits as output), and KangarooTwelve which is a derivation oh SHA3 which is intended to be faster. To run this program type:
+After this you will be prompted to chose the version of sha-3 which conists of 224, 256, 384, 512 and these dertimine the bit length of the output digest. Once you have chosen a version you will be prompted to enter the data you would like hashed. After that the data is hashed and the hex digest is printed out. Next there is a file named sha3libraries.py, this file contains the 4 main sha3 functions, sha3 on a file (showing how after 'corrupting' a file you get a differnt hash), SHAKE (an extendable output function that allows you to choose the number of bits as output), and KangarooTwelve which is a derivation oh SHA3 which is intended to be faster. Each of the hashes are implemented by python libraries, everything execpt KangarooTwelve is from the built in library hashlib while KangarooTwelve is from the Crypto.Hash libary. To run this program type:
 ```sh
 python3 sha3libraries.py
 ```
