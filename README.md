@@ -3,6 +3,21 @@ This repository contains all of my assignments from CS456: Cryptography at Clark
 break a given file using the information that was given and then usually something extra. All of my solutions are done in python. The Chat-Protocal is an 
 exrypted chat protocal that allows two parties to conduct secure communication, this was also done in python.
 
+## SHA-3
+Examining SHA-3 was for the final project for this class. We were assigned to do a research project on an area in cyrptography and I chose to do SHA-3. We were assigned a 5-10 page paper on it and a 5-10 minute presentaion. First look at sha3.py, this is my implementation of SHA-3 in python. To run the program cd into the SHA-3 directory and run:
+```sh
+python3 sha3.py
+```
+After this you will be prompted to chose the version of sha-3 which conists of 224, 256, 384, 512 and these dertimine the bit length of the output digest. Once you have chosen a version you will be prompted to enter the data you would like hashed. After that the data is hashed and the hex digest is printed out. Next there is a file named sha3libraries.py, this file contains the 4 main sha3 functions, sha3 on a file (showing how after 'corrupting' a file you get a differnt hash), SHAKE (an extendable output function that allows you to choose the number of bits as output), and KangarooTwelve which is a derivation oh SHA3 which is intended to be faster. To run this program type:
+```sh
+python3 sha3libraries.py
+```
+After you run it the program will take you through each of the algorithms so that you can see what the hashed data will look like. Lastly, the file drbg.py is my version of a deterministic random bit generator using keyed-hashing for message authentication and SHA3_512 to create a requested number of random bytes and outputting them. To run this run:
+```sh
+python3 drbg.py
+```
+After running this you will be prompted to create a seed for the generator then you will be asked for a number of random bytes you would like. To exit you must simple enter 0 and to reseed the generator you must enter 999.
+
 ## a1
 This assignment's topic was RSA. The first thing I had to do was break the file cipher.txt in hacka1. I did this by encoding every ascii character with
 the public keys that we were given and then compared them to the cipher text and printed the plaintext to broken.txt. To see how this was done please 
@@ -76,18 +91,3 @@ python3 client.py
 One the client starts you will be prompted to enter your AES secret which has to be 16 characters. Once that is selected the client uses the server's
 public keys to encrypt the AES key and send it to the server to decrypt. Once both the server and client have the AES key, the channel is secure and you
 are free to chat back and forth since every message is encrypted with AES before it is sent.
-
-## SHA-3
-This was for the final project for this class. We were assigned to do a research project on an area in cyrptography and I chose to do SHA-3. We were assigned a 5-10 page paper on it and a 5-10 minute presentaion. First look at sha3.py, this is my implementation of SHA-3 in python. To run the program cd into the SHA-3 directory and run:
-```sh
-python3 sha3.py
-```
-After this you will be prompted to chose the version of sha-3 which conists of 224, 256, 384, 512 and these dertimine the bit length of the output digest. Once you have chosen a version you will be prompted to enter the data you would like hashed. After that the data is hashed and the hex digest is printed out. Next there is a file named sha3libraries.py, this file contains the 4 main sha3 functions, sha3 on a file (showing how after 'corrupting' a file you get a differnt hash), SHAKE (an extendable output function that allows you to choose the number of bits as output), and KangarooTwelve which is a derivation oh SHA3 which is intended to be faster. To run this program type:
-```sh
-python3 sha3libraries.py
-```
-After you run it the program will take you through each of the algorithms so that you can see what the hashed data will look like. Lastly, the file drbg.py is my version of a deterministic random bit generator using keyed-hashing for message authentication and SHA3_512 to create a requested number of random bytes and outputting them. To run this run:
-```sh
-python3 drbg.py
-```
-After running this you will be prompted to create a seed for the generator then you will be asked for a number of random bytes you would like. To exit you must simple enter 0 and to reseed the generator you must enter 999.
