@@ -82,4 +82,12 @@ This was for the final project for this class. We were assigned to do a research
 ```sh
 python3 sha3.py
 ```
-After this you will be prompted to chose the version of sha-3 which conists of 224, 256, 384, 512 and these dertimine the bit length of the output digest. Once you have chosen a version you will be prompted to enter the data you would like hashed. After that the data is hashed and the hex digest is printed out.
+After this you will be prompted to chose the version of sha-3 which conists of 224, 256, 384, 512 and these dertimine the bit length of the output digest. Once you have chosen a version you will be prompted to enter the data you would like hashed. After that the data is hashed and the hex digest is printed out. Next there is a file named sha3libraries.py, this file contains the 4 main sha3 functions, sha3 on a file (showing how after 'corrupting' a file you get a differnt hash), SHAKE (an extendable output function that allows you to choose the number of bits as output), and KangarooTwelve which is a derivation oh SHA3 which is intended to be faster. To run this program type:
+```sh
+python3 sha3libraries.py
+```
+After you run it the program will take you through each of the algorithms so that you can see what the hashed data will look like. Lastly, the file drbg.py is my version of a deterministic random bit generator using keyed-hashing for message authentication and SHA3_512 to create a requested number of random bytes and outputting them. To run this run:
+```sh
+python3 drbg.py
+```
+After running this you will be prompted to create a seed for the generator then you will be asked for a number of random bytes you would like. To exit you must simple enter 0 and to reseed the generator you must enter 999.
