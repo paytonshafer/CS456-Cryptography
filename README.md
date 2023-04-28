@@ -4,7 +4,7 @@ break a given file using the information that was given and then usually somethi
 exrypted chat protocal that allows two parties to conduct secure communication, this was also done in python.
 
 ## SHA-3
-Examining SHA-3 was for the final project for this class. We were assigned to do a research project on an area in cyrptography and I chose to do SHA-3. We were assigned a 5-10 page paper on it and a 5-10 minute presentaion. First look at sha3.py, this is my implementation of SHA-3 in python. To run the program cd into the SHA-3 directory and run:
+Examining SHA-3 was for the final project for this class. We were assigned to do a research project on an area in cryptography and I chose to do SHA-3. We were assigned a 5-10 page paper on it and a 5-10 minute presentaion. First look at sha3.py, this is my implementation of SHA-3 in python. To run the program cd into the SHA-3 directory and run:
 ```sh
 python3 sha3.py
 ```
