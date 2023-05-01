@@ -48,12 +48,10 @@ def padding(A, r):
     val = list('0' * new_len)
     val[new_len-8] = '1'
 
-    d = '00000110'
-
     if remainder == 0:
         return A
     else:
-        out = A + d + ''.join(str(x) for x in (np.zeros(r - remainder - 9 ,dtype= int))) + '1'
+        out = A + '1' + ''.join(str(x) for x in (np.zeros(r - remainder - 2 ,dtype= int))) + '1'
         return out[:new_len]
 
 # 1600 bits(1 dimensional array) to 3 dimensional array of 5x5x64
