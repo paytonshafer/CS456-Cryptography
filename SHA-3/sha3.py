@@ -178,7 +178,7 @@ if __name__=='__main__':
     data = input('Please enter the data you\'d like to hash: ')
     #print('Running SHA-3 with state size of ' + str(b) + ' for ' + str(rounds) + ' rounds')
     
-    bits = ''.join(format(ord(i), '08b') for i in data) #turn the message into bits
+    bits = ''.join(format(ord(i), '08b') for i in data) + '01' #turn the message into bits
     padded = padding(bits, output_len['r']) #padd the messege
 
     hex_digest = sha3(padded, b, rounds, output_len) #send padded bits, state size, rounds, and version
