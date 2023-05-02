@@ -36,23 +36,13 @@ print('256: ' + m256.hexdigest())
 print('384: ' + m384.hexdigest())
 print('512: ' + m512.hexdigest())
 
+data = input("\nInput some different data to hash: ")
+m512_2 = hashlib.sha3_512()
+m512_2.update(data.encode())
+print('512: ' + m512_2.hexdigest())
+
 #use hashlib on files too
 print('\nHASHLIB-SHA3: data as a file\n')
-
-#function to corrupt the file, just adds a blank page to the end
-def corrupt(file):
-    out = PdfWriter()
-    pdfOne = PdfReader(open(file, "rb"))
-    pdfTwo = PdfReader(open("blank.pdf", "rb"))
-
-    for i in range(len(pdfOne.pages)): #this loop adds all the pages in the file
-        out.add_page(pdfOne.pages[i])
-
-    out.add_page(pdfTwo.pages[0]) #this adds the extra page, 'corrupting the file'
-
-    outputStream = open("sha3.pdf", "wb")
-    out.write(outputStream)
-    outputStream.close()
 
 #for a file
 with open('sha3.pdf', 'rb') as f:
