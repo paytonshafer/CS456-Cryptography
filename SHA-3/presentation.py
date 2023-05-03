@@ -42,7 +42,8 @@ m512_2.update(data.encode())
 print('512: ' + m512_2.hexdigest())
 
 #use hashlib on files too
-print('\nHASHLIB-SHA3: data as a file\n')
+print('\nHASHLIB-SHA3: data as a file [press ENTER to continue]')
+input()
 
 #for a file
 with open('sha3.pdf', 'rb') as f:
