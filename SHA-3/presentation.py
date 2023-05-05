@@ -51,7 +51,7 @@ with open('sha3.pdf', 'rb') as f:
 print('256: ' + digest.hexdigest())
 
 input('Press enter to \'corrupt\' the file and you will see the hash change')
-#corrupt('sha3.pdf')
+corrupt('sha3.pdf')
 
 with open('sha3.pdf', 'rb') as f:
     digest = hashlib.file_digest(f, "sha3_256")
